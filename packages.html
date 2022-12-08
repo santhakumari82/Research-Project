@@ -1,0 +1,39 @@
+<html>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+      <div class="mermaid">
+    
+        classDiagram
+          class backTesting {
+          }
+          class commonUtils {
+          }
+          class cryptoAnalysis {
+          }
+          class cryptoFlaskMain {
+          }
+          class cryptoProgramMain {
+          }
+          class dailyCryptoData {
+          }
+          class dailyCryptoScheduler {
+          }
+          class historicalCryptoData {
+          }
+          class models {
+          }
+          class topCryptoCurrencies {
+          }
+          cryptoFlaskMain --> backTesting
+          cryptoFlaskMain --> commonUtils
+          cryptoProgramMain --> backTesting
+          cryptoProgramMain --> commonUtils
+          cryptoProgramMain --> cryptoAnalysis
+          cryptoProgramMain --> models
+          dailyCryptoData --> commonUtils
+          historicalCryptoData --> commonUtils
+          topCryptoCurrencies --> commonUtils
+  
+       </div>
+  </body>
+</html>

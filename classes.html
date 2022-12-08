@@ -1,0 +1,57 @@
+<html>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+      <div class="mermaid">
+    
+        classDiagram
+          class BackTesting {
+            performBackTesting(crypto_data_df)
+          }
+          class BackTestingStrategy {
+            lower_limit : int
+            rsi
+            rsi_window : int
+            upper_limit : int
+            init()
+            next()
+          }
+          class BackTestingStrategy {
+            lower_limit : int
+            rsi
+            rsi_window : int
+            upper_limit : int
+            init()
+            next()
+          }
+          class CommonUtils {
+            getDBConnection()
+            sendEmail()
+          }
+          class CryptoAnalysis {
+            addRsiIndicators(df)
+            buildPearsonCoefficient(data)
+            compareCryptoPrices(crypto_df)
+            technicalIndicators(df)
+          }
+          class CryptoProgramMain {
+            performCryptoAnalysisTasks()
+          }
+          class DailyCryptoData {
+            getDailyCryptoData()
+          }
+          class HistoricalCryptoData {
+            convert_resultset_tolist()
+            getHistoricalCryptoData()
+          }
+          class Models {
+            buildFBProphetModel(data, symbol, symbol_desc)
+            buildLSTMModel(df_crypto, symbol, symbol_desc)
+          }
+          class TopCryptoCurrencies {
+            Coinmarket_API_URL : str
+            get_cryptocurrency_symbols()
+          }
+  
+       </div>
+  </body>
+</html>
